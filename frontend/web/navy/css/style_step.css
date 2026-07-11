@@ -1,0 +1,353 @@
+.index-count span{
+    display: inline-flex;
+    color: #fff;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background: #00507A;
+    /* background: hsl(201deg 100% 45%); */
+    /* border: 2px solid #00507A; */
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    z-index: 99;
+    
+  }
+  .single__step{
+    opacity: .7;
+    text-align: center;
+    
+  }
+  .index-count{
+    position: relative;
+    z-index: 1;
+  }
+
+  .index-count::before{
+    position: absolute;
+    content: "";
+    width: 91.2%;
+    height: 2px;
+    background: rgb(187, 185, 185);
+    top: 50%;
+    right: 50%;
+    transform: translate(0, -50%);
+  }
+  .single__step.active .index-count::before{
+    background: hsl(201deg 100% 45%);
+  }
+  .single__step:first-child .index-count::before{
+    display: none;
+  }
+
+  .single__step.active{
+    opacity: 1;
+  }
+  .single__step.active span{
+    background: hsl(201deg 100% 45%);
+  }
+
+  .single__step .step_disc{
+    margin-top: 10px;
+  }
+  .single__step .step_disc h5{
+    color: #fff;
+    font-size: 15px;
+  }
+  .single__step .step_disc p{
+    font-style: italic;
+    font-size: 13px;
+    margin-top: 2px;
+    color: #fff;
+  }
+
+  .signup__wrap{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffffff1a;
+    margin-top: 20px;
+    padding: 60px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .index-count::before{
+        display: none;
+    }
+    .wizard-inner .single__step{
+        margin-top: 24px !important;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .signup__wrap{
+        padding: 30px 25px;
+    }
+    .index-count span{
+        height: 45px;
+        width: 45px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+  }
+
+  .position_data__table{
+    color: #fff;
+    margin-top: 30px;
+  }
+  .position_data__table th{
+    border-color: #001731;
+  }
+  .position_data__table td{
+    border-color: #001731;
+  }
+  .position_data__table.table>:not(:last-child)>:last-child>*{
+    border-bottom-color: #001731;
+  }
+  .position_data__table.table>:not(caption)>*>*{
+    padding: 10px 16px;
+  }
+  .position_data__table tr:nth-child(even){
+    background: #001731a8;
+  }
+  .position_data__table thead{
+    background: #001731;
+  }
+  /* login // singnUp form design */
+
+.data-form-area {
+    padding-top: 150px;
+}
+
+.form__body{
+    max-width: 880px;
+    margin: 0 auto;
+    background: #F9FAFB;
+    border: 1.5px solid #E6E6E9;
+    padding: 80px 30px;
+    padding-top: 70px;
+    border-radius: 10px;
+}
+
+.form__content{
+    max-width: 580px;
+    margin: 0 auto;
+}
+
+.form__content input{
+    height: 44px;
+}
+.form__content .form__btn{
+    height: 44px;
+    font-weight: 600;
+}
+.data-form-area .section-title h1{
+    font-size: 38px;
+}
+.data-form-area .section-title{
+    margin-bottom: 40px;
+}
+.forgot__pass{
+  margin-top: 12px;
+  font-weight: 500;
+  display: block;
+  color: #111827;
+  font-size: 16px;
+}
+
+.forgot__pass span, .forgot__pass a{
+  color: #0D6EFD;
+}
+
+.district_not__allow{
+  font-size: 14px;
+  color: #ff2121;
+}
+
+.submit__select{
+  height: 44px;
+  width: 100%;
+  font-weight: 600;
+}
+.field-downloaddocuments-download_by select{
+  height: 44px;
+  width: 100%;
+}
+
+.download_form__content label{
+  color: #302e2e !important;
+  margin-bottom: 10px !important;
+}
+
+@media screen and (max-width: 992px) {
+  .data-form-area .section-title h1{
+    font-size: 26px;
+  }
+  .form__body{
+    padding: 44px 20px;
+  }
+  .form__content input{
+    height: 38px;
+  }
+  .field-downloaddocuments-download_by select{
+    height: 38px;
+  }
+  
+  .forgot__pass{
+    font-size: 14px;
+  }
+  .data-form-area .section-title{
+    margin-bottom: 30px;
+  }
+  .table__overflow{
+    overflow-x: scroll;
+  }
+
+  .position_data__table.table>:not(caption)>*>*{
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+
+/* 5 step form */
+.form__steps{
+  display: flex;
+  align-items: center;
+}
+
+.form__steps > .single_step{
+  flex-grow: 1;
+  text-align: center;
+  width: 20%;
+}
+.single_step {
+  padding: 14px 0;
+}
+.single_step .step_index span{
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+  background: #08466B;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  line-height: 1;
+  position: relative;
+  z-index: 99;
+}
+.single_step .step_name{
+  color: #fff;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.form__steps > .single_step.active_step .step_index span{
+  background: #0095E6;
+}
+.form__steps > .single_step{
+  opacity: .7;
+}
+.form__steps > .single_step.active_step{
+  opacity: 1;
+}
+
+.form__steps > .single_step .step_index{
+  position: relative;
+}
+.form__steps > .single_step .step_index::before {
+  position: absolute;
+  content: "";
+  width: 92.2%;
+  height: 2px;
+  background: rgb(187, 185, 185);
+  top: 50%;
+  right: 50%;
+  transform: translate(0, -50%);
+}
+.form__steps > .single_step:first-child .step_index::before{
+  display: none;
+}
+.form__steps > .single_step.active_step .step_index::before{
+  background: #0095E6;
+}
+
+.top-info-wrap{
+  color: #EC3C3D;
+}
+.top-info-wrap {
+  padding: 20px;
+  border: 1px dashed rgba(255, 0, 0, 0.616);
+}
+.top-info-wrap .ti1{
+  font-size: 24px;
+  line-height: 1.4;
+}
+.top-info-wrap .ti2{
+  font-size: 20px;
+  line-height: 1.4;
+}
+.common-btn.bg-yellow.modified-btn{
+  background: #FFE500 !important;
+  color: #001731;
+}
+.user_info__wrap{
+  padding: 30px 20px;
+  background: #1A2F46;
+  border-radius: 25px;
+}
+.min-overflow-table table{
+  min-width: 600px;
+
+}
+
+ 
+@media screen and (max-width: 992px) {
+  .form__steps{
+    align-items: baseline;
+  }
+  .form__steps > .single_step .step_index::before{
+    width: 86.2%;
+  }
+  .single_step .step_name{
+    font-size: 14px;
+  }
+  .single_step .step_index span{
+    font-size: 12px;
+  }
+  .top-info-wrap .ti1{
+    font-size: 20px;
+  }
+  .top-info-wrap .ti2{
+    font-size: 16px;
+  }
+  .top-info-wrap {
+    padding: 0;
+    border: none;
+  }
+  .education_qualification__table tr td{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .form__steps > .single_step .step_index::before{
+    display: none;
+  }
+  .form__steps > .single_step{
+    width: 50%;
+  }
+  .single_step .step_index span{
+    width: 34px;
+    height: 34px;
+  }
+  .form__steps{
+    flex-wrap: wrap;
+  }
+}
